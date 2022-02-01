@@ -4,5 +4,4 @@ After selecting an enemy object type (i.e. ASTEROID, ROCKET, or UFO) from an enu
 
 ```
 Category: Creation patterns
-From "Design Patterns."
 ```
