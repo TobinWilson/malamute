@@ -1,4 +1,4 @@
-class EnemyObjectAsteroid implements EnemyObject {
+public class EnemyObjectAsteroid implements EnemyObject {
     private String name;
     private Integer damage;
     
