@@ -25,7 +25,7 @@ public class EnemyObjectFactory {
 }
 ```
 
-The benefits? We can instantiate objects on the fly, and assign responsibility (i.e. instantiation) on a single class, the factory.
+The benefits? We can instantiate objects on the fly. Our core purpose--object instantiation--becomes the responsibility of a single class, the factory.
 
 ```
 Category: Creation patterns
