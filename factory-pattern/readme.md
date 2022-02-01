@@ -3,8 +3,8 @@ This program uses the FACTORY PATTERN.
 After selecting an enemy object type (i.e. ASTEROID, ROCKET, or UFO) from an enum, we call various methods of the object.
 
 Benefits: 
-- Can instantiate objects on the fly
-- Adheres to principle of single responsibility (instantiation handled by one class)
+- Instantiate objects on the fly
+- Single responsibility (i.e. instantiation)
 
 ```
 Category: Creation patterns
