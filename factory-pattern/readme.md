@@ -1,10 +1,31 @@
 This program uses the FACTORY PATTERN.
 
-We start by selecting an object from a list of enumerable types. An object is then instantiated from a factory.
+We start by selecting an object from a list of enumerable types. Depending on the type, an object will be instantiated from a factory method.
 
-Benefits: 
-- Instantiate objects on the fly
-- Single responsibility (i.e. instantiation)
+```
+public enum EnemyObjectType {
+    ASTEROID,
+    ROCKET, 
+    UFO
+}
+
+public class EnemyObjectFactory {
+    public EnemyObject makeEnemyObject(EnemyObjectType objectType) {
+        switch(objectType) {
+            case ASTEROID:
+                return new EnemyObjectAsteroid();
+            case ROCKET:
+                return new EnemyObjectRocket();
+            case UFO:
+                return new EnemyObjectUfo();
+            default:
+                return new EnemyObjectAsteroid();
+        }
+    }
+}
+```
+
+The benefits? We can instantiate objects on the fly, and assign responsibility (i.e. instantiation) on a single class, the factory.
 
 ```
 Category: Creation patterns
