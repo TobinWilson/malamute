@@ -1,4 +1,4 @@
-class EnemyObjectRocket implements EnemyObject {
+public class EnemyObjectRocket implements EnemyObject {
     private String name;
     private Integer damage;
     
