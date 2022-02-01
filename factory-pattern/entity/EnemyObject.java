@@ -1,4 +1,4 @@
-interface EnemyObject {
+public interface EnemyObject {
     void scan();
     void attack();
     void followPlayer();
